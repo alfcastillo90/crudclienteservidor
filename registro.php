@@ -18,11 +18,11 @@ $email = $_POST["email"];
 $nombre = $_POST["nombre"];
 $username = $_POST["username"];
 
-$sql = "INSERT INTO usuarios (nombre,apellido,nomre_usuario,email,clave)
+$sql = "INSERT INTO usuarios (nombre,apellido,nombre_usuario,email,clave)
 VALUES ('$nombre','$apellido','$username','$email','$clave')";
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+if ($conn->query($sql) === true) {
+   header('Location: http://localhost/CrudClienteServidor/registroexitoso.html');
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
