@@ -22,23 +22,22 @@
                     </div>
                 </div> 
                 <div class="main-login main-center">
-                    <form class="form-horizontal" id="form-registro-usuario" method="post">
-
+                    <form class="form-horizontal" id="form-registro-usuario" method="post" action="register.php">
                         <div class="form-group">
                             <label for="name" class="cols-sm-2 control-label">Su nombre</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Ingrese su nombre"/>
+                                    <input type="text" class="form-control" name="nombre" id="nombre"  placeholder="Ingrese su nombre" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Su nombre</label>
+                            <label for="name" class="cols-sm-2 control-label">Su Apellido</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Ingrese su nombre"/>
+                                    <input type="text" class="form-control" name="apellido" id="apellido"  placeholder="Ingrese su Apellido" required/>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +46,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Ingrese su  Email"/>
+                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Ingrese su  Email" required/>
                                 </div>
                             </div>
                         </div>
@@ -57,33 +56,21 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="username" id="username"  placeholder="ingrese su nombre de usuario"/>
+                                    <input type="text" class="form-control" name="username" id="username"  placeholder="ingrese su nombre de usuario" required/>
                                 </div>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="password" class="cols-sm-2 control-label">Contrase&ntilde;a</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="password" id="password"  placeholder="Ingrese su contraseña"/>
+                                    <input type="password" class="form-control" name="clave" id="clave"  placeholder="Ingrese su contraseña" required/>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="confirm" class="cols-sm-2 control-label">Confirmar Contrase&ntilde;a</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirme su contraseña"/>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="form-group ">
-                            <button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Registrar</button>
                         </div>
                         <div class="login-register">
                             <a href="index.php">Iniciar sesion</a>
